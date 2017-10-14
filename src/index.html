@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>main</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/superfish.css">
+    <link rel="stylesheet" href="assets/css/camera.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-migrate-1.1.1.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.equalheights.js"></script>
+    <script src="assets/js/superfish.js"></script>
+    <script src="assets/js/jquery.mobilemenu.js"></script>
+    <script src="assets/js/jquery.ui.totop.js"></script>
+    <script src="assets/js/camera.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script>
+      $(window).load( function() {
+          jQuery('#camera_wrap_1').camera({
+              height: '84.31%',
+              pagination: true,
+              thumbnails: false,
+              playPause: false,
+              time: 8000,
+              transPeriod: 700,
+              fx: 'simpleFade',
+              loader: 'none',
+              minHeight:'200px',
+              navigation: false
+          });
+          $().UItoTop({ easingType: 'easeOutQuart' });
+          $('.flickr_badge_image a').addClass('img-bord').wrap('<div class="box-2"></div>');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="app/bundle.js"></script>
+  </body>
+</html>
