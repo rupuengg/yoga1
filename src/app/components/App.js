@@ -1,15 +1,14 @@
 import React from 'react';
 
-import { Head } from '../common/Head.js'
-import { Foot } from '../common/Foot.js'
-import { Section1 } from '../home/Section1.js'
+import { Head } from '../common/Head.js';
+import { Foot } from '../common/Foot.js';
 
-export class App extends React.Component{
+export default class App extends React.Component{
   render(){
     return(
       <div>
         <Head/>
-        <Section1/>
+        {this.props.children}
         <Foot/>
       </div>
     );

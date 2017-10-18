@@ -8,6 +8,7 @@ import { MainPage } from './components/App';
 // All routes go here
 // Don't forget to import the compoent above after adding new route
 // <Route path="/about" componet={About} />
+// <IndexRoute component={MainPage} />
 export default(
   <Route path="/" component="App">
     <IndexRoute component={MainPage} />

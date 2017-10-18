@@ -1,6 +1,11 @@
 import React from 'react';
+import { browserHistory } from 'react-router';
 
-export class Section1 extends React.Component{
+export class Home extends React.Component{
+  componentDidMount(){
+    browserHistory.push('/');
+  }
+
   render(){
     return(
       <section className="content">
